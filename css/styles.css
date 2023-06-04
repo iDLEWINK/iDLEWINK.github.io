@@ -1,0 +1,162 @@
+.profile-img {
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;    
+    font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.socials {
+    font-size: 3.2em;
+    text-decoration: none;    
+}
+
+a, li.nav-item > a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+a:hover, li.nav-item > a:hover {
+    color: #666666;
+ }
+
+.conference {
+    text-transform: uppercase;
+}
+
+.citation {
+    color: #666666;
+    font-weight: 200;
+}
+
+/* HOVER ON BG */
+.hover-bg {
+    border-radius: 15px;
+    background-color: #ffffff;
+    -webkit-transition: 
+        background-color 300ms linear, 
+        color 300ms linear;            
+}
+  
+  .hover-bg:hover { 
+    background-color: #f3f3f3;
+      }
+
+
+/* HOVER EFFECT */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+  /*TYPING EFFECT*/
+.typing-demo {
+    width: 33ch;
+    animation: typing 5s steps(33), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 15px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/*FADE IN*/
+.fade-in {
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
