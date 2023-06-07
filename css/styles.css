@@ -39,7 +39,7 @@ a:hover, li.nav-item > a:hover {
 
 .card-title {
     font-weight: 200;
-    font-size: 0.8vw;
+    font-size: calc(9px + 0.390625vw)
 }
 
 .tech-stack{
